@@ -1,41 +1,77 @@
-// src/Courses.js
 import React from 'react';
-import './Courses.css';
-import { Link } from 'react-router-dom';
+import CourseCard from './CourseCard';
+import './Courses.css'
+import { FaDatabase, FaKeyboard, FaJava, FaLaptopCode } from 'react-icons/fa';
+import { SiAdobexd } from 'react-icons/si';
+import { AiFillFileExcel } from 'react-icons/ai';
 
 function Courses() {
-  const courses = [
-    { name: "JAVA", img: "java-image-url" },
-    { name: "COMPUTER LITERACY", img: "computer-literacy-image-url" },
-    { name: "JS", img: "js-image-url" },
-    { name: "Graphic Design", img: "graphic-design-image-url" },
-    { name: "Mastering Excel", img: "excel-image-url" },
-    { name: "Web Development", img: "web-development-image-url" }
-  ];
-
   return (
-    <div className="courses-page">
-      <nav className="navbar">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/courses">Courses</Link></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#partners">Partners</a></li>
-          <li><a href="#about-us">About Us</a></li>
-        </ul>
-      </nav>
-
-      <h1>Courses</h1>
-      <div className="courses-grid">
-        {courses.map((course, index) => (
-          <div key={index} className="course-card">
-            <img src={course.img} alt={course.name} />
-            <h2>{course.name}</h2>
-          </div>
-        ))}
+    <div className="App">
+      <header className="App-header">
+        <div className="heading-container">
+          <h1>Courses</h1>
+        </div>
+        <p>Unlock Your Potential: Explore Wide Range of Courses Today!!</p>
+      </header>
+      <div className="course-container">
+        <CourseCard 
+          title="Mastering Excel" 
+          level="Intermediate Level" 
+          duration="10 hours" 
+          instructor="By Smith Kotze" 
+          views="1k" 
+          icon={<AiFillFileExcel />} 
+          customClass="excel-icon"
+        />
+        <CourseCard 
+          title="Java" 
+          level="Advanced Level" 
+          duration="14 hours" 
+          instructor="By Lee Nakay" 
+          views="1k" 
+          icon={<FaJava />} 
+          customClass="java-icon"
+        />
+        <CourseCard 
+          title="Computer Literacy" 
+          level="Beginner Level" 
+          duration="8 hours" 
+          instructor="By Jon Deon" 
+          views="1M" 
+          icon={<FaLaptopCode />} 
+          customClass="computer-literacy-icon"
+        />
+        <CourseCard 
+          title="Database" 
+          level="Beginner Level" 
+          duration="6 hours" 
+          instructor="By Sam Masuku" 
+          views="3k" 
+          icon={<FaDatabase />} 
+          customClass="database-icon"
+        />
+        <CourseCard 
+          title="Typing" 
+          level="Beginner Level" 
+          duration="6 hours" 
+          instructor="By Sam Masuku" 
+          views="3k" 
+          icon={<FaKeyboard />}
+        />
+        <CourseCard 
+          title="Graphic Design" 
+          level="Intermediate Level" 
+          duration="15 hours" 
+          instructor="By Sam Masuku" 
+          views="3k" 
+          icon={<SiAdobexd />} 
+          customClass="graphic-design-icon"
+        />
       </div>
-      <button className="explore-more-btn">Explore More Courses</button>
+      <div className="explore-more">
+        <button>Explore more courses</button>
+      </div>
     </div>
   );
 }
