@@ -1,6 +1,6 @@
 .home-page {
     height: 100vh;
-    background-color: #D8A7B1; /* Dusty Pink */
+    background-color: #F591AF; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8,11 +8,24 @@
     padding: 20px;
   }
   
+  .home-icon img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+  }
+  
   .navbar {
     width: 100%;
     text-align: right;
   }
   
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 140px; /* Adjust size as needed */
+    height: 140px; /* Adjust size as needed */
+    object-fit: contain;
+  }
 
 .quote {
     color: white;
@@ -33,7 +46,7 @@
   
   .navbar a {
     text-decoration: none;
-    color: #333;
+    color: #C72C5A;
     font-weight: bold;
   }
   
@@ -42,16 +55,18 @@
   }
   
   button {
-    background-color: #333;
-    color: #fff;
+    background-color: #D9D9D9;
+    color: #C72C5A;
     border: none;
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
     font-size: 16px;
+    font-style:italic;
+    border-radius: 20px;
   }
   
   button:hover {
-    background-color: #555;
+    background-color: #d4c3c3dc;
   }
   

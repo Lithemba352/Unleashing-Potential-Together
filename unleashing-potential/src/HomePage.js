@@ -1,18 +1,20 @@
-// src/HomePage.js
 import React from 'react';
 import './HomePage.css';
 import { Link } from 'react-router-dom';
+import Logo from './images/Logo.jpg'; 
 
 function HomePage() {
   return (
     <div className="home-page">
       <nav className="navbar">
+      <img src={Logo} alt="Unleashing Potential Logo" className="logo" />
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/courses">Courses</Link></li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/achievements">Achievements</Link></li>
           <li><Link to="/partners">Partners</Link></li>
+          <li><Link to="/login">Login</Link></li>
           <li><Link to="/about-us">About Us</Link></li>
         </ul>
       </nav>

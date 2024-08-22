@@ -6,6 +6,8 @@ import Blog from './Blog';
 import Achievements from './Achievements';
 import Partners from './Partners';
 import AboutUs from './AboutUs';
+import Login from './Login';
+import SignUp from './SignUp';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signUp" element={<SignUp />} />
         </Routes>
       </div>
     </Router>
