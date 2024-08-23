@@ -8,7 +8,7 @@ function Achievements() {
       <div className="achievement-header">
         <h1>Our Achievements</h1>
       </div>
-      <img src={Badge} alt="Achievement Bage" className="achievement-badge" />
+      <img src={require('./Achievements.png')} alt="Achievement Badge" className="achievement-badge" />
       <div className="achievement-content">
         <h2>Empowering Over 1,000 IT Professionals:</h2>
         <p>
@@ -18,7 +18,7 @@ function Achievements() {
           and skills needed to thrive in the rapidly evolving tech landscape.
         </p>
       </div>
-    </div>
+   </div>
   );
 }
 
