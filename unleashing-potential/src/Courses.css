@@ -1,53 +1,83 @@
-.courses-page {
-    background-color: #FFC0CB; /* Pink background */
-    padding: 20px;
-    text-align: center;
-    min-height: 100vh;
-  }
-  
-  .courses-page h1 {
-    color: #800080; /* Purple color for the heading */
-    margin-bottom: 40px;
-  }
-  
-  .courses-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-  }
-  
-  .course-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    width: 250px;
-    padding: 20px;
-  }
-  
-  .course-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .course-card h2 {
-    margin: 10px 0;
-    font-size: 18px;
-  }
-  
-  .explore-more-btn {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 30px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .explore-more-btn:hover {
-    background-color: #555;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+.course-page {
+  background-color: #F591AF; 
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.courses-header p {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px 0 20px; 
+  font-family: 'Roboto', sans-serif;
+}
+
+.course-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.course-card {
+  background-color: #D2A9E0; 
+  padding: 15px;
+  margin: 10px;
+  text-align: left;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  color: #000000; 
+}
+
+.course-card h3, .course-card p {
+  color: #000000; 
+}
+
+.course-header h1 {
+  color: #C72C5A;
+  font-family: 'Irish Grover', cursive;
+  font-size: 120px; 
+}
+
+.course-icon {
+  font-size: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.excel-icon .course-icon {
+  color: #ffffff;
+  background-color: #217346;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.btnCourse {
+  display: inline-block; /* Ensures the button sizing and layout are correct */
+  background-color: #BA55D3;
+  color: white;
+  padding: 10px 20px; /* Adjust padding to make it smaller */
+  font-size: 1rem; /* Adjust font size to make it smaller */
+  border: none;
+  border-radius: 15px; /* Adjust border-radius for smaller button */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Ensure no underline for links */
+  margin: 10px 0; /* Adjust margin for spacing */
+}
+
+.btnCourse:hover {
+  background-color: #4d4d99; 
+}
+
+.course-explore-more-button {
+  margin-top: 30px;
+}

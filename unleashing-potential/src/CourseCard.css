@@ -1,0 +1,74 @@
+.course-card {
+    background-color: #D8BFD8; 
+    border: 2px solid #C8A2C8;
+    padding: 15px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
+    position: relative; 
+    color: #4B0082; 
+  }
+  
+  h3 {
+    color: #000000; 
+    font-size: 1.2rem; 
+    margin-bottom: 10px;
+    font-weight: bold; 
+  }
+  
+  .course-level, .course-duration, .course-instructor, .course-views {
+    color: #4B0082; 
+    margin: 5px 0;
+  }
+  
+  .course-icon {
+    font-size: 50px;
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+  }
+  
+  
+  .excel-icon .course-icon {
+    color: #ffffff; 
+    background-color: #217346; 
+    border-radius: 4px; 
+    padding: 5px; 
+  }
+  
+
+  .java-icon .course-icon {
+    color: #f89820; 
+  }
+  
+
+  .database-icon .course-icon {
+    color: #4db8ff; 
+  }
+  
+
+  .computer-literacy-icon .course-icon {
+    color: #000000; 
+  }
+  
+ 
+  .graphic-design-icon .course-icon {
+    color: #ff9a00; 
+    font-weight: bold; 
+    background-color: transparent; 
+    padding: 0; 
+  }
+  
+  
+
+  
+  .Courses-header h1 {
+    color: #b30047; /* Keep the deep red color for the heading */
+    font-size: 4.5rem; /* Keep the larger font size for prominence */
+    font-family: 'MedievalSharp', serif; /* Font for the heading */
+    font-weight: 700; /* Set the font-weight to a bolder value */
+    margin: 0; /* Remove all margins around the heading */
+    padding: 0; /* Remove all padding around the heading */
+  }
