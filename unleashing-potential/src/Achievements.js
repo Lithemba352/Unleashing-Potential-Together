@@ -1,14 +1,25 @@
 import React from 'react';
 import './Achievements.css';
-import Badge from './images/Badge.jpg'
+import Badge from './images/Badge.jpg';
+import { Link } from 'react-router-dom';
 
 function Achievements() {
   return (
     <div className="achievements-page">
+      <nav className="navbar">
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/courses">Courses</Link></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+      </nav>
       <div className="achievement-header">
         <h1>Our Achievements</h1>
       </div>
-      <img src={require('./Achievements.png')} alt="Achievement Badge" className="achievement-badge" />
+      <img src={Badge} alt="Achievement Badge" className="achievement-badge" />
       <div className="achievement-content">
         <h2>Empowering Over 1,000 IT Professionals:</h2>
         <p>

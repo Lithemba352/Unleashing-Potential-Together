@@ -1,5 +1,5 @@
 .achievements-page {
-    background-color: #F7B9C2;
+    background-color: #F591AF;
     padding: 20px;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -15,24 +15,26 @@
     margin-bottom: 0px; 
     position: relative;
     font-size: larger;
-  }
+}
   
-  .achievement-header h1 {
-    font-size: 3em;
-    color: #9D3C52;
-    font-family: 'Lobster', cursive;
-    margin-top: 20px; 
-    flex: 1; 
-    text-align: center;
-  }
+.achievement-header h1 {
+  font-size: 3em;
+  color: #C72C5A;
+  font-family: 'Lobster', cursive;
+  margin-top: 20px; 
+  flex: 1; 
+  text-align: center;
+  position: relative; 
+}
   
-  .achievement-badge {
-    width: 150px; 
-    height: auto;
-    position: absolute;
-    right: 100px; 
-    top: 0;
-  }
+.achievement-badge {
+  width: 150px; 
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  transform: translateY(50%);
+}
   
   .achievement-content {
     margin-top: 30px; 
@@ -53,7 +55,7 @@
   
   .achievement-content {
     padding: 5px 15px 5px 15px;
-    background-color: #F7B9C2;
+    /* background-color: #F7B9C2; */
     border-radius: 10px; 
   }
   

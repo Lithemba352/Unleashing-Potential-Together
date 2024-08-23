@@ -25,9 +25,9 @@ function HomePage() {
 
       <div className="buttons">
         <Link to="/courses">
-          <button className="explore-btn">Explore Courses</button>
+          <button className="home-explore-btn">Explore Courses</button>
         </Link>
-        <button className="view-blogs-btn">View Blogs</button>
+        <button className="home-view-blogs-btn">View Blogs</button>
       </div>
     </div>
   );

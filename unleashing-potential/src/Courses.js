@@ -4,11 +4,22 @@ import './Courses.css'
 import { FaDatabase, FaKeyboard, FaJava, FaLaptopCode } from 'react-icons/fa';
 import { SiAdobexd } from 'react-icons/si';
 import { AiFillFileExcel } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 function Courses() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="course-page">
+       <nav className="navbar">
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/courses">Courses</Link></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+      </nav>
+      <header className="course-header">
         <div className="heading-container">
           <h1>Courses</h1>
         </div>
@@ -69,8 +80,8 @@ function Courses() {
           customClass="graphic-design-icon"
         />
       </div>
-      <div className="explore-more">
-        <button>Explore more courses</button>
+      <div className="course-explore-more-button">
+        <button className="btnCourse" >Explore more courses</button>
       </div>
     </div>
   );
